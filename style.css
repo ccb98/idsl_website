@@ -114,3 +114,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
 .pub .date{margin-top:2px}.pub span:last-child a{margin-right:12px;font-size:.9rem}
 #q{margin-top:8px}
 .card iframe{aspect-ratio:16/9;height:auto}
+
+nav{display:flex;flex-wrap:wrap;gap:2px 16px}
+nav a{margin-left:0;white-space:nowrap}
+.yt{display:inline-block;margin-top:8px;font-size:.9rem}

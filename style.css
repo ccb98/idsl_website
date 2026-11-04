@@ -219,3 +219,5 @@ details.rm[open] summary::after{content:" ▴"}
 details.rm[open] summary{font-size:0;line-height:0;margin:0}
 details.rm[open] summary::before{content:"Show less";font-size:.92rem;line-height:1.6}
 details.rm[open]>p{margin-top:8px}
+
+.area-banner{width:100%;aspect-ratio:1079/305;object-fit:cover;border-radius:14px;border:1px solid var(--line);margin:0 0 18px;display:block}

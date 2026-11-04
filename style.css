@@ -196,3 +196,5 @@ details.more summary{cursor:pointer;color:var(--accent);font-weight:600;padding:
  .dot{left:-43px;top:4px;margin:0}
  .yr{position:static;display:block;transform:none;margin-bottom:6px}
 }
+
+.person.faculty .bio{margin:12px 0 0;color:var(--fg);font-size:.98rem;line-height:1.6}

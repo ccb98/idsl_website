@@ -121,3 +121,15 @@ nav a{margin-left:0;white-space:nowrap}
 
 .about{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}.about p{margin:0;font-size:1.05rem}.about .checks{margin:0}@media(max-width:760px){.about{grid-template-columns:1fr}}
 .hero-img{aspect-ratio:10/7;object-fit:cover}
+
+/* projects */
+.projects{display:grid;gap:24px}
+.project{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:16px;padding:24px 28px}
+.project.tbd{border-left-color:var(--line);opacity:.8}
+.project .phd{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.project h2{margin:0;font-size:1.4rem}
+.status{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;background:var(--accent);color:#fff;border-radius:999px;padding:3px 12px}
+.funder{color:var(--accent);font-weight:600;margin:6px 0 12px}
+.facts{list-style:none;margin:16px 0;padding:0;display:grid;gap:8px}
+.facts li{display:grid;grid-template-columns:90px 1fr;gap:12px;font-size:.95rem}
+.facts b{color:var(--muted);font-weight:600}

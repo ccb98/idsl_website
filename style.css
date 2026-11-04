@@ -198,3 +198,11 @@ details.more summary{cursor:pointer;color:var(--accent);font-weight:600;padding:
 }
 
 .person.faculty .bio{margin:12px 0 0;color:var(--fg);font-size:.98rem;line-height:1.6}
+
+.director{display:grid;grid-template-columns:170px 1fr;gap:28px;align-items:start;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
+.director img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center 20%;border-radius:12px}
+.director h3{margin:0 0 2px;font-size:1.4rem}
+.director .role{margin:0 0 12px;color:var(--accent);font-size:.85rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+.director p{margin:0 0 12px}
+.director .links{display:flex;flex-wrap:wrap;gap:6px 16px;margin:4px 0 0;font-size:.92rem}
+@media(max-width:620px){.director{grid-template-columns:1fr}.director img{max-width:170px}}

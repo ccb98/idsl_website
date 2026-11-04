@@ -209,3 +209,13 @@ details.more summary{cursor:pointer;color:var(--accent);font-weight:600;padding:
 
 .pcards{grid-template-columns:repeat(auto-fill,minmax(min(100%,440px),1fr))}
 .pcard p{line-height:1.6}
+
+.pcards{align-items:start}
+details.rm{margin:0}
+details.rm summary{cursor:pointer;color:var(--accent);font-weight:600;font-size:.92rem;list-style:none;display:inline-block;padding:2px 0}
+details.rm summary::-webkit-details-marker{display:none}
+details.rm summary::after{content:" ▾"}
+details.rm[open] summary::after{content:" ▴"}
+details.rm[open] summary{font-size:0;line-height:0;margin:0}
+details.rm[open] summary::before{content:"Show less";font-size:.92rem;line-height:1.6}
+details.rm[open]>p{margin-top:8px}

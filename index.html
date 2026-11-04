@@ -5,18 +5,7 @@
 <p>We build digital systems and machine learning that work together: from tools that map deep neural networks onto FPGAs to vision for robots and drones.</p>
 <a class="btn" href="research.html">Explore our research</a><a class="btn alt" href="publications.html">Publications</a></div>
 <img class="hero-img" src="images/hero-research.svg" alt="A neural network feeding an FPGA chip, with object detection and a drone: the research themes of the lab"></div></section>
-<section class="stats"><div class="wrap"><div><b id="st-pubs">184</b><span>publications</span></div><div><b id="st-members">10</b><span>current researchers</span></div><div><b id="st-alumni">27</b><span>PhD graduates</span></div><div><b id="st-areas">3</b><span>research areas</span></div></div></section>
-<script>
-// Stats are counted from the publications and people pages; the numbers above are fallbacks.
-(async()=>{
-  const count=async(url,sel)=>{const r=await fetch(url);if(!r.ok)throw 0;return new DOMParser().parseFromString(await r.text(),"text/html").querySelectorAll(sel).length;};
-  const set=(id,n)=>{if(n>0)document.getElementById(id).textContent=n;};
-  try{set("st-pubs",await count("publications.html",".pub"));}catch(e){}
-  try{set("st-members",await count("people.html",".person.post, .person.phd, .person.faculty"));
-      set("st-alumni",await count("people.html",".yr li"));}catch(e){}
-  set("st-areas",document.querySelectorAll(".area").length);
-})();
-</script>
+
 <main><div class="wrap"><h2 class="sh">What we do</h2><div class="about"><p>iDSL is part of the Circuits and Systems research group in the Department of Electrical and Electronic Engineering at Imperial College London. We work on <b>high-performance, energy-efficient digital systems</b>, mainly for machine learning and computer vision.</p>
 <ul class="checks"><li><b>Co-design:</b> we design algorithms and hardware together, so each informs the other.</li><li><b>Toolflows:</b> we build tools that automatically map neural networks onto FPGAs and other processors.</li><li><b>Architectures:</b> we design hardware for specific classes of problems, from 3D CNNs to SLAM.</li></ul></div><h2 class="sh">Research areas</h2><div class="areas"><a class="area" href="research.html"><img src="images/research/machine-learning.jpg" alt="Machine Learning" loading="lazy"><div><h3>Machine Learning</h3><p>Efficient and adaptive deep learning, including early-exit networks and uncertainty estimation.</p></div></a><a class="area" href="research.html"><img src="images/research/computer-vision.jpg" alt="Computer Vision" loading="lazy"><div><h3>Computer Vision</h3><p>Object detection and video understanding on resource-constrained hardware.</p></div></a><a class="area" href="research.html"><img src="images/research/uavs.webp" alt="Robotics &amp; UAVs" loading="lazy"><div><h3>Robotics &amp; UAVs</h3><p>Embedded visual intelligence for drones, with partners such as the KIOS Research Center.</p></div></a></div>
 <h2 class="sh">Flagship: fpgaConvNet</h2><div class="feature"><div><p>fpgaConvNet is a framework from our lab that bridges the gap between deep learning developers and FPGAs. It automatically maps CNN models onto FPGA hardware, and is open source.</p><a class="btn" href="https://github.com/ICIdsl">View on GitHub</a></div><div class="shots"><img src="images/research/fpgaconvnet.png" alt="fpgaConvNet website" loading="lazy"><img src="images/research/github.png" alt="iDSL GitHub" loading="lazy"></div></div>

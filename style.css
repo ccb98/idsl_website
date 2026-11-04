@@ -206,3 +206,6 @@ details.more summary{cursor:pointer;color:var(--accent);font-weight:600;padding:
 .director p{margin:0 0 12px}
 .director .links{display:flex;flex-wrap:wrap;gap:6px 16px;margin:4px 0 0;font-size:.92rem}
 @media(max-width:620px){.director{grid-template-columns:1fr}.director img{max-width:170px}}
+
+.pcards{grid-template-columns:repeat(auto-fill,minmax(min(100%,440px),1fr))}
+.pcard p{line-height:1.6}

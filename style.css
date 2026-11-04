@@ -146,3 +146,10 @@ nav a{margin-left:0;white-space:nowrap}
 details.more{margin-top:12px}
 details.more summary{cursor:pointer;color:var(--accent);font-weight:600;padding:8px 0}
 .feature .shots img{max-height:220px;object-fit:cover;object-position:top}
+
+.pcards{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+.pcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;display:flex;flex-direction:column;gap:8px}
+.pcard h3{margin:0;font-size:1.05rem}
+.pcard p{margin:0;color:var(--muted);font-size:.95rem}
+.pcard .links{margin-top:auto}
+.projects{margin-bottom:8px}

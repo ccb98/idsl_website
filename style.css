@@ -118,3 +118,6 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
 nav{display:flex;flex-wrap:wrap;gap:2px 16px}
 nav a{margin-left:0;white-space:nowrap}
 .yt{display:inline-block;margin-top:8px;font-size:.9rem}
+
+.about{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}.about p{margin:0;font-size:1.05rem}.about .checks{margin:0}@media(max-width:760px){.about{grid-template-columns:1fr}}
+.hero-img{aspect-ratio:10/7;object-fit:cover}

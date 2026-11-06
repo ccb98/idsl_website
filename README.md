@@ -26,12 +26,4 @@ Then open <http://localhost:8000> in a browser. Stop the server with `Ctrl+C`.
 - `join.html` — Opportunities and application guidance
 - `contact.html` — Contact details
 
-## Publish with GitHub Pages
 
-For the short organization URL `https://icidsl.github.io/`, the site files need to be at the root of the `icidsl.github.io` repository in the `ICIdsl` organization.
-
-In that repository, open **Settings → Pages** and choose **Deploy from a branch**, then select the `main` branch and the `/(root)` folder. The root `index.html` is the site entry point. GitHub Pages will publish the static files without a separate build step.
-
-## Updating content
-
-Edit the relevant HTML page and commit the change to the publishing branch. Keep image paths relative to the repository root (for example, `images/people/christos-bouganis.webp`). Project photos and figures are stored under `images/projects/`.

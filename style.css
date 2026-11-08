@@ -250,3 +250,15 @@ details.rm[open]>p{margin-top:8px}
 .row.rev>.research-image-link{order:2}
 #machine-learning,#computer-vision,#robotics-uavs{scroll-margin-top:90px}
 @media(max-width:760px){.row.rev>.research-image-link{order:0}}
+
+.snake .scard video{display:block;width:100%;aspect-ratio:16/9;object-fit:contain;background:#0b1f4d}
+
+.snake>.srow.last.multi{width:100%}
+.snake>.srow.last.multi .snode{flex:0 0 calc((100% - 16px)/2)}
+@media(max-width:820px){.snake>.srow.last.multi{width:auto}.snake>.srow.last.multi .snode{flex:0 0 auto}}
+
+/* Publication entries lead with the venue, followed by the paper title. */
+.pub .pub-venue{display:inline-block;margin:0 0 8px 0;font-size:.82rem;font-weight:700;letter-spacing:.02em}
+.pub>strong{display:block;font-size:1.04rem;line-height:1.45;margin-bottom:4px}
+.pub .pub-authors{display:block;color:var(--muted);font-size:.93rem;line-height:1.5}
+.pub .pub-links{display:block;margin-top:7px}

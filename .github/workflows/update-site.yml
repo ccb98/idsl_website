@@ -1,0 +1,42 @@
+name: Weekly site update
+
+# Every Monday: look for new papers, rebuild the publication list and report broken links.
+# New papers arrive as a pull request so a person reviews them before they go live.
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  publications:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Add new papers from OpenAlex
+        run: python3 tools/update_publications.py
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+
+      - name: Open a pull request if anything changed
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: auto/publications
+          commit-message: "Add new publications from OpenAlex"
+          title: "New publications found"
+          body: |
+            The weekly update found new papers. Please check the titles, authors and venues in
+            `data/publications.json`. Merge to publish, or add titles you do not want to
+            `data/excluded_titles.txt` and remove them from the list.
+          labels: publications
+
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check external links
+        run: python3 tools/check_links.py

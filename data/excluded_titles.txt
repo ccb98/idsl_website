@@ -1,0 +1,2 @@
+# Titles listed here are never added automatically (one per line).
+fpgaConvNet: Automated Mapping of Convolutional Neural Networks on FPGAs (Abstract Only)

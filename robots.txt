@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://icidsl.github.io/sitemap.xml
+Sitemap: https://ccb98.github.io/idsl_website/sitemap.xml

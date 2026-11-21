@@ -46,3 +46,5 @@ The list on `publications.html` is generated from `data/publications.json`. Do n
 ## Publishing on GitHub Pages
 
 Push the repository, then in *Settings → Pages* choose *Deploy from a branch*, branch `main`, folder `/ (root)`. The empty `.nojekyll` file tells GitHub to serve the files as they are.
+
+The site will be served at <https://ccb98.github.io/idsl_website/> (set as `base_url` in `tools/config.json`). Because this is a project site under a sub-path, search engines only read a `robots.txt` placed at the root of `ccb98.github.io`; the one here is harmless, and the sitemap can be submitted directly in Google Search Console instead.

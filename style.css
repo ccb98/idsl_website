@@ -274,3 +274,56 @@ details.rm[open]>p{margin-top:8px}
 .fl-shot{display:block;background:#fff;border-radius:14px;border:1px solid var(--line);box-shadow:0 8px 24px rgba(0,0,0,.12);padding:14px}
 .fl-shot img{width:100%;display:block;max-height:380px;object-fit:contain}
 @media(max-width:820px){.flagship{grid-template-columns:1fr;padding:22px}.fl-shot{order:-1}}
+
+/* fpgaConvNet page */
+.fcn-head{padding:44px 0 36px}
+.fcn-head-in{display:grid;grid-template-columns:1.4fr 1fr;gap:36px;align-items:center}
+.fcn-logo{display:inline-block;background:#fff;border-radius:14px;padding:12px 20px;margin-bottom:14px;box-shadow:0 6px 18px rgba(0,0,0,.12)}
+.fcn-logo img{display:block;height:54px;width:auto}
+.fcn-head p{max-width:560px}
+.fcn-actions{margin-top:16px}.fcn-actions .btn{margin:0 8px 8px 0}
+.fcn-facts{display:grid;gap:12px}
+.fcn-facts div{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:12px;padding:12px 16px}
+.fcn-facts b{display:block;font-size:1.25rem;color:var(--accent)}
+.fcn-facts span{color:var(--muted);font-size:.9rem}
+.fcn-prev{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:10px 16px;font-size:.95rem;color:var(--muted)}
+.fcn-sub{display:flex;flex-wrap:wrap;gap:6px 18px;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 0;margin:8px 0 0}
+.fcn-sub a{text-decoration:none;font-weight:600;font-size:.95rem}
+.fcn-sec{padding-top:36px;scroll-margin-top:90px}
+.fcn-sec>h2{margin:0 0 14px;padding-bottom:10px;border-bottom:2px solid var(--accent)}
+.fcn-sec h3{margin:26px 0 8px}
+.fcn-dev{color:var(--muted)}
+.fcn-cols{columns:2 320px;column-gap:36px}.fcn-cols p{margin:0 0 14px;break-inside:avoid-column}
+.fcn-fig{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;overflow-x:auto}
+.fcn-fig img{display:block;width:100%;min-width:640px;height:auto}
+.fcn-comps{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));margin-top:20px}
+.fcn-comp{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.fcn-comp h3{margin:12px 0 6px}
+.fcn-comp p{margin:0 0 10px;font-size:.95rem;color:var(--muted)}
+.fcn-comp-img{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px;height:220px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.fcn-comp-img img{max-width:100%;max-height:196px;width:auto;height:auto;object-fit:contain}
+.fcn-big{background:linear-gradient(135deg,#0b1f4d,#1b4fd6);border:0;color:#fff;text-align:center}
+.fcn-big span{font-size:3rem;font-weight:800;display:block;line-height:1}.fcn-big small{display:block;font-size:.85rem;opacity:.85;padding:6px 14px}
+.fcn-links{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.92rem}
+.fcn-chips{display:flex;flex-wrap:wrap;gap:10px}
+.fcn-chip{background:var(--card);border:1px solid var(--accent);color:var(--accent);border-radius:999px;padding:6px 16px;font-weight:600;font-size:.95rem}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:14px 0}
+.rtable{border-collapse:collapse;width:100%;font-size:.9rem;white-space:nowrap}
+.rtable th{background:var(--card);text-align:left;padding:10px 12px;border-bottom:2px solid var(--accent)}
+.rtable td{padding:8px 12px;border-bottom:1px solid var(--line)}
+.rtable tbody tr:nth-child(even){background:var(--card)}
+.fcn-note{color:var(--muted);font-size:.92rem}
+.fcn-timeline{list-style:none;margin:20px 0 0;padding:0 0 0 22px;border-left:3px solid var(--line)}
+.fcn-pub{position:relative;margin:0 0 22px;padding:2px 0 0 14px}
+.fcn-pub::before{content:"";position:absolute;left:-34px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--accent)}
+.fcn-pub-top{display:flex;flex-wrap:wrap;gap:6px 14px;justify-content:space-between;align-items:baseline}
+.fcn-pub h3{margin:0;font-size:1.05rem;flex:1 1 380px}
+.fcn-venue{font-weight:700;color:var(--accent);white-space:nowrap}
+.fcn-auth{margin:4px 0;font-style:italic;color:var(--muted);font-size:.93rem}
+.fcn-pub p{margin:4px 0}
+.fcn-vis{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px}
+.fcn-credit{margin-top:40px;color:var(--muted);font-size:.9rem}
+@media(max-width:820px){.fcn-head-in{grid-template-columns:1fr}}
+
+.fl-prev{margin:12px 0 0;font-size:.9rem;color:var(--muted)}
+.fcn-comp-img.fcn-big{flex-direction:column;gap:4px;padding:16px}

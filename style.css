@@ -366,3 +366,7 @@ details.rm[open]>p{margin-top:8px}
 .fcn-open-badge{font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--accent);color:#fff;border-radius:999px;padding:3px 12px}
 .fcn-open-text{color:var(--muted);flex:1 1 260px}
 .fcn-open .fcn-links{margin:0}
+
+/* license labels */
+.tag.lic{border-color:var(--accent);color:var(--accent);font-weight:600}
+.fcn-lic{margin:8px 0 0;font-size:.85rem;color:var(--muted)}

@@ -358,3 +358,11 @@ details.rm[open]>p{margin-top:8px}
 .fcn-points{list-style:none;margin:12px 0 18px;padding:0;max-width:600px}
 .fcn-points li{position:relative;padding:6px 0 6px 28px;line-height:1.5}
 .fcn-points li::before{content:"\2713";position:absolute;left:2px;top:6px;color:var(--accent);font-weight:700}
+
+/* fpgaConvNet: single-column header, open-source banner */
+.fcn-head-in{grid-template-columns:1fr}
+.fcn-head-in>div{max-width:760px}
+.fcn-open{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;margin-top:18px;padding:12px 18px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:12px}
+.fcn-open-badge{font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--accent);color:#fff;border-radius:999px;padding:3px 12px}
+.fcn-open-text{color:var(--muted);flex:1 1 260px}
+.fcn-open .fcn-links{margin:0}

@@ -370,3 +370,10 @@ details.rm[open]>p{margin-top:8px}
 /* license labels */
 .tag.lic{border-color:var(--accent);color:var(--accent);font-weight:600}
 .fcn-lic{margin:8px 0 0;font-size:.85rem;color:var(--muted)}
+
+/* Supporting units row for fpgaConvNet benchmark tables. */
+.rtable.imagenet-results thead tr:first-child th{border-bottom:0}
+.rtable.imagenet-results thead tr.metric-detail th{font-weight:400;font-size:.78rem;color:var(--muted);padding-top:2px;border-bottom:2px solid var(--accent)}
+.rtable.imagenet-results thead tr:first-child th[rowspan="2"]{border-bottom:2px solid var(--accent)}
+
+.fcn-new-badge{display:inline-block;vertical-align:middle;margin-left:10px;padding:3px 8px;border-radius:999px;background:var(--accent);color:#fff;font-size:.7rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase}

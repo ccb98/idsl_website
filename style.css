@@ -377,3 +377,4 @@ details.rm[open]>p{margin-top:8px}
 .rtable.imagenet-results thead tr:first-child th[rowspan="2"]{border-bottom:2px solid var(--accent)}
 
 .fcn-new-badge{display:inline-block;vertical-align:middle;margin-left:10px;padding:3px 8px;border-radius:999px;background:var(--accent);color:#fff;font-size:.7rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.imagenet-results td .sub{display:block;font-size:.8rem;color:var(--muted)}

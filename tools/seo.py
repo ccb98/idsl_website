@@ -31,8 +31,7 @@ DESCRIPTIONS = {
     "github.html": "Open-source toolflows and research code from iDSL on GitHub (ICIdsl).",
     "publications.html": "Publications from iDSL grouped by year, with links to papers, code and slides.",
     "videos.html": "Demo videos, talks and papers from iDSL's work on UAVs, SLAM and FPGA acceleration.",
-    "join.html": "PhD opportunities at iDSL: what we look for, scholarship expectations and how to get in touch.",
-    "contact.html": "Contact the Intelligent Digital Systems Lab at Imperial College London.",
+    "join.html": "Join iDSL and contact the lab: PhD opportunities, what we look for, scholarship expectations, address and email.",
 }
 
 START, END = "<!-- seo:start -->", "<!-- seo:end -->"
@@ -103,7 +102,7 @@ def sitemap():
 
 
 def not_found():
-    s = (ROOT / "contact.html").read_text(encoding="utf8")
+    s = (ROOT / "join.html").read_text(encoding="utf8")
     s = re.sub(re.escape(START) + r".*?" + re.escape(END), "", s, flags=re.S)
     s = re.sub(r"<title>.*?</title>", f"<title>Page not found | {esc(SITE)}</title>", s, count=1, flags=re.S)
     s = s.replace("<head>", f'<head><base href="{esc(BASE)}">', 1)

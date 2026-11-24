@@ -131,7 +131,7 @@ nav a{margin-left:0;white-space:nowrap}
 .facts b{color:var(--muted);font-weight:600}
 
 .ntag{display:inline-block;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;border-radius:6px;padding:1px 8px;margin-right:8px;background:var(--line);color:var(--muted)}
-.ntag.project{background:var(--accent);color:#fff}
+.ntag.project,.ntag.people{background:var(--accent);color:#fff}
 
 .news li{align-items:baseline}
 .news li::before{top:.9em}

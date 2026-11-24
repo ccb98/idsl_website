@@ -22,8 +22,8 @@ Then open <http://localhost:8000>. Stop the server with `Ctrl+C`.
 - `github.html` — Research code and repositories
 - `publications.html` — Publications (generated, see below)
 - `videos.html` — Video highlights
-- `join.html` — Opportunities and application guidance
-- `contact.html` — Contact details
+- `join.html` — Opportunities, application guidance and contact details
+- `contact.html` — redirect to `join.html#contact` (old address kept so links keep working)
 - `404.html` — Page not found
 
 ## Publications

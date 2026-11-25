@@ -39,6 +39,10 @@ The list on `publications.html` is generated from `data/publications.json`. Do n
 
 `python3 tools/seo.py` adds the description, favicon, share-card and canonical tags to every page and regenerates `sitemap.xml`, `robots.txt` and `404.html`. The site address is `base_url` in `tools/config.json`; change it there if the site is published somewhere else, then re-run the script. Page descriptions are in the `DESCRIPTIONS` table at the top of `tools/seo.py`; add a line there when you add a page.
 
+## Page views
+
+The site can count visits with [GoatCounter](https://www.goatcounter.com) (free for non-commercial use, no cookies, no personal data, so no consent banner). Sign up, choose a site code (it gives you `CODE.goatcounter.com`), put it in `tools/config.json` as `"goatcounter_code"`, then run `python3 tools/seo.py` and push. Leave it empty to switch counting off.
+
 ## Checking links
 
 `python3 tools/check_links.py` tests every external link and groups the results as OK, blocked (bot protection or a login wall, not necessarily broken), unreachable and broken. The weekly workflow runs it too and shows the summary in the Actions run.

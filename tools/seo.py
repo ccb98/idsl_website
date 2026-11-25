@@ -18,6 +18,10 @@ CFG = json.loads((ROOT / "tools" / "config.json").read_text(encoding="utf8"))
 BASE = CFG["base_url"].rstrip("/") + "/"
 SITE = CFG["site_name"]
 IMAGE = BASE + CFG["share_image"]
+# Optional page-view counter (GoatCounter: free, no cookies, so no consent banner is needed).
+# Put your GoatCounter site code in tools/config.json ("goatcounter_code") and re-run this script.
+GC = re.sub(r"^https?://|\.goatcounter\.com.*$", "", CFG.get("goatcounter_code", "").strip())  # accepts "ccb98" or "ccb98.goatcounter.com"
+ANALYTICS = (f'<script data-goatcounter="https://{GC}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>' if GC else "")
 
 DESCRIPTIONS = {
     "index.html": "The Intelligent Digital Systems Lab (iDSL) at Imperial College London designs high-performance, energy-efficient digital systems for machine learning and computer vision.",
@@ -76,6 +80,8 @@ def block(page, title, desc):
     ]
     if page == "index.html":
         lines.append('<script type="application/ld+json">' + json.dumps(ORG_JSONLD) + "</script>")
+    if ANALYTICS:
+        lines.append(ANALYTICS)
     lines.append(END)
     return "".join(lines)
 
@@ -106,7 +112,7 @@ def not_found():
     s = re.sub(re.escape(START) + r".*?" + re.escape(END), "", s, flags=re.S)
     s = re.sub(r"<title>.*?</title>", f"<title>Page not found | {esc(SITE)}</title>", s, count=1, flags=re.S)
     s = s.replace("<head>", f'<head><base href="{esc(BASE)}">', 1)
-    s = s.replace("</title>", '</title><meta name="robots" content="noindex">', 1)
+    s = s.replace("</title>", '</title><meta name="robots" content="noindex">' + ANALYTICS, 1)
     s = s.replace(" class=on", "").replace(' class="on"', "")
     body = ('<section class="pagehead"><div class="wrap"><h1>Page not found</h1>'
             "<p>The page you were looking for does not exist or has moved.</p></div></section>"

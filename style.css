@@ -427,3 +427,4 @@ details.rm[open]>p{margin-top:8px}
 .fcn-flow .tool small{font-size:.68rem;font-weight:500;opacity:.92;margin-top:2px}
 .fcn-flow i{align-self:center;font-style:normal;color:var(--accent);font-weight:700}
 @media(prefers-color-scheme:dark){.fcn-flow .tool{color:#0e1116}}
+.fcn-head p.fcn-time{margin:-4px 0 14px;font-weight:600;color:var(--accent);font-size:.95rem}

@@ -37,7 +37,7 @@ The list on `publications.html` is generated from `data/publications.json`. Do n
 
 ## Search and sharing metadata
 
-`python3 tools/seo.py` adds the description, favicon, share-card and canonical tags to every page and regenerates `sitemap.xml`, `robots.txt` and `404.html`. The site address is `base_url` in `tools/config.json`; change it there if the site is published somewhere else, then re-run the script. Page descriptions are in the `DESCRIPTIONS` table at the top of `tools/seo.py`; add a line there when you add a page.
+`python3 tools/seo.py` adds the description, favicon, share-card and canonical tags to every page and regenerates `sitemap.xml`, `robots.txt` and `404.html`. The site address is `base_url` in `tools/config.json`; change it there if the site is published somewhere else, then re-run the script. It also stamps `style.css?v=…` on every page, so after you edit `style.css` run it again and visitors get the new stylesheet immediately instead of a cached copy. Page descriptions are in the `DESCRIPTIONS` table at the top of `tools/seo.py`; add a line there when you add a page.
 
 ## Page views
 

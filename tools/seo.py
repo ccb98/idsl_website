@@ -7,6 +7,7 @@ address, edit that value and run:  python3 tools/seo.py
 The script is safe to re-run: it replaces its own block (between <!-- seo:start --> and
 <!-- seo:end -->) in each page.
 """
+import hashlib
 import html
 import json
 import re
@@ -37,6 +38,11 @@ DESCRIPTIONS = {
     "videos.html": "Demo videos, talks and papers from iDSL's work on UAVs, SLAM and FPGA acceleration.",
     "join.html": "Join iDSL and contact the lab: PhD opportunities, what we look for, scholarship expectations, address and email.",
 }
+
+# Cache-busting: the stylesheet link carries a short hash of style.css, so browsers fetch the new
+# file as soon as it changes (instead of mixing new HTML with a cached old stylesheet).
+CSS_VERSION = hashlib.sha1((ROOT / "style.css").read_bytes()).hexdigest()[:8]
+CSS_LINK = re.compile(r'href="style\.css(\?v=[0-9a-f]+)?"')
 
 START, END = "<!-- seo:start -->", "<!-- seo:end -->"
 esc = lambda t: html.escape(t, quote=True)
@@ -93,6 +99,7 @@ def process(page):
     title = html.unescape(m.group(1)).strip()
     s = re.sub(re.escape(START) + r".*?" + re.escape(END), "", s, flags=re.S)
     s = re.sub(r"(<title>.*?</title>)", lambda mm: mm.group(1) + block(page, title, DESCRIPTIONS[page]), s, count=1, flags=re.S)
+    s = CSS_LINK.sub(f'href="style.css?v={CSS_VERSION}"', s)
     path.write_text(s, encoding="utf8")
 
 
@@ -128,4 +135,4 @@ if __name__ == "__main__":
         process(page)
     sitemap()
     not_found()
-    print(f"SEO tags added to {len(DESCRIPTIONS)} pages; wrote sitemap.xml, robots.txt, 404.html (base {BASE})")
+    print(f"Stylesheet version {CSS_VERSION}. SEO tags added to {len(DESCRIPTIONS)} pages; wrote sitemap.xml, robots.txt, 404.html (base {BASE})")

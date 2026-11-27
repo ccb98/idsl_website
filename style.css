@@ -406,3 +406,24 @@ details.rm[open]>p{margin-top:8px}
 .acc-plot .pl{fill:var(--fg);font-size:13px;font-weight:600}
 .spd-bar.out{min-width:0;position:relative;overflow:visible}.spd-bar.out b{position:absolute;left:100%;margin-left:6px;color:var(--fg);white-space:nowrap}
 @media(prefers-color-scheme:dark){.spd-bar.out b{color:var(--fg)}}
+.fcn-head-in{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:36px;align-items:center}
+.fcn-head-in>div{max-width:none}
+.fcn-hero{margin:0}.fcn-hero figcaption{margin-top:6px;font-size:.8rem;color:var(--muted);text-align:center}
+.fcn-fig-svg{width:100%;height:auto;display:block;max-width:460px;margin:0 auto}
+.fcn-fig-svg .fr{fill:none;stroke:var(--line);stroke-width:2}
+.fcn-fig-svg .tg{fill:rgba(20,24,31,.72)}.fcn-fig-svg .tgt{fill:#fff;font-size:10px;font-weight:600}
+.fcn-fig-svg .lbl{fill:#fff;font-size:11px;font-weight:700}
+.fcn-fig-svg .ttl{fill:var(--fg);font-size:13px;font-weight:700}
+.fcn-fig-svg .ar{fill:none;stroke:var(--accent);stroke-width:2.5}.fcn-fig-svg .ahp{fill:var(--accent)}
+.fcn-fig-svg .chip{fill:var(--accent);opacity:.92}.fcn-fig-svg .pin{fill:var(--muted)}
+.fcn-fig-svg .cell{fill:rgba(255,255,255,.22)}
+.fcn-fig-svg .chiptxt{fill:#fff;font-size:30px;font-weight:800;letter-spacing:.08em}
+.fcn-fig-svg .chipsub{fill:#fff;font-size:12px;opacity:.9}
+@media(max-width:820px){.fcn-head-in{grid-template-columns:1fr}}
+.fcn-lead{font-size:1.12rem}.fcn-lead b{color:var(--accent)}
+.fcn-flow{display:flex;align-items:stretch;justify-content:center;gap:8px;margin:0 auto 12px;max-width:460px;font-size:.8rem;font-weight:600}
+.fcn-flow span{flex:1;display:flex;flex-direction:column;justify-content:center;text-align:center;padding:8px 6px;border:1px solid var(--line);border-radius:10px;background:var(--card);line-height:1.25}
+.fcn-flow .tool{background:var(--accent);border-color:var(--accent);color:#fff;font-size:.9rem}
+.fcn-flow .tool small{font-size:.68rem;font-weight:500;opacity:.92;margin-top:2px}
+.fcn-flow i{align-self:center;font-style:normal;color:var(--accent);font-weight:700}
+@media(prefers-color-scheme:dark){.fcn-flow .tool{color:#0e1116}}

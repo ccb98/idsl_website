@@ -378,3 +378,31 @@ details.rm[open]>p{margin-top:8px}
 
 .fcn-new-badge{display:inline-block;vertical-align:middle;margin-left:10px;padding:3px 8px;border-radius:999px;background:var(--accent);color:#fff;font-size:.7rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
 .imagenet-results td .sub{display:block;font-size:.8rem;color:var(--muted)}
+.spd{margin:18px 0 8px;padding:16px 18px;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+.spd figcaption{font-weight:700;margin-bottom:8px}
+.spd-key{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.85rem;color:var(--muted);margin-bottom:12px}
+.spd-key i,.spd-bar{background:var(--accent)}.spd-key i.k2,.spd-bar.k2{background:var(--accent2,#d9730d)}
+.spd-key i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.spd-row{display:grid;grid-template-columns:150px 1fr;gap:10px;align-items:center;margin:10px 0}
+.spd-m{font-weight:600;font-size:.9rem}
+.spd-bars{display:flex;flex-direction:column;gap:3px}
+.spd-bar{height:20px;min-width:34px;border-radius:0 4px 4px 0;display:flex;align-items:center;justify-content:flex-end;padding:0 6px;box-sizing:border-box}
+.spd-bar b{font-size:.75rem;color:#fff}
+:root{--accent2:#c2410c}
+@media(prefers-color-scheme:dark){:root{--accent2:#f0a45a}.spd-bar.k2 b{color:#14181f}}
+@media(max-width:560px){.spd-row{grid-template-columns:1fr;gap:4px}}
+.spd-key i.k3,.spd-bar.k3{background:#6b7280}
+.spd-bar.k3 b{color:#fff}
+.lat-axis{position:relative;height:18px;margin:4px 0 0 160px;font-size:.75rem;color:var(--muted)}
+.lat-axis span{position:absolute;top:0}
+.lat-axis span:nth-child(n+2){transform:translateX(-50%)}
+@media(max-width:560px){.lat-axis{margin-left:0}}
+@media(prefers-color-scheme:dark){.spd-key i.k3,.spd-bar.k3{background:#8b94a3}.spd-bar.k3 b{color:#14181f}}
+.acc-plot svg{width:100%;height:auto;display:block}
+.acc-plot .g{stroke:var(--line);stroke-width:1}
+.acc-plot .tk,.acc-plot .ax{fill:var(--muted);font-size:12px}
+.acc-plot .ax{font-size:13px}
+.acc-plot .pt{fill:var(--accent);stroke:var(--card);stroke-width:2}
+.acc-plot .pl{fill:var(--fg);font-size:13px;font-weight:600}
+.spd-bar.out{min-width:0;position:relative;overflow:visible}.spd-bar.out b{position:absolute;left:100%;margin-left:6px;color:var(--fg);white-space:nowrap}
+@media(prefers-color-scheme:dark){.spd-bar.out b{color:var(--fg)}}
